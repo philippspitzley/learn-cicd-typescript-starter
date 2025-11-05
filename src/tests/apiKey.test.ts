@@ -8,7 +8,7 @@ describe("API KEY retrieval", () => {
   const invalidHeaders: IncomingHttpHeaders = { authorization: "invalid" };
   console.log(headers["authorization"]);
 
-  test.fails("Authorization Header has api key", async () => {
+  test("Authorization Header has api key", async () => {
     expect(getAPIKey(headers)).toBe(token);
   });
 
