@@ -42,3 +42,6 @@ jobs:
 
       - name: Check Fromatting
         run: npm run format:check
+
+      - name: Check Linting
+        run: npm run lint
